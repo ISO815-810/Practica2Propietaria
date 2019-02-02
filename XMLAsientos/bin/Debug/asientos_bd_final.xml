@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<AsientosContables xmlns="https://www.miurl.me" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+	xs:schemaLocation="https://www.miurl.me xsd2.xsd" >
+	
+	<AsientoContable Id="129">
+		<NoAsiento>7</NoAsiento>
+		<DescripcionAsiento>Carol Lewis</DescripcionAsiento>
+		<FechaAsiento>15/12/2018</FechaAsiento>
+		<CuentaContable>1125</CuentaContable>
+		<TipoMovimiento>CR</TipoMovimiento>
+		<Monto>90000</Monto>
+	</AsientoContable>
+
+	<AsientoContable Id="24">
+		<NoAsiento>13</NoAsiento>
+		<DescripcionAsiento>Prro :V</DescripcionAsiento>
+		<FechaAsiento>14/02/2019</FechaAsiento>
+		<CuentaContable>3252</CuentaContable>
+		<TipoMovimiento>DB</TipoMovimiento>
+		<Monto>500</Monto>
+	</AsientoContable>
+</AsientosContables>

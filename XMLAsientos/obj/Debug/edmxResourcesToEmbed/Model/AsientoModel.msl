@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AsientoModelStoreContainer" CdmEntityContainer="AsientoModelContainer">
+    <EntitySetMapping Name="AsientoContableSet">
+      <EntityTypeMapping TypeName="IsTypeOf(AsientoModel.AsientoContable)">
+        <MappingFragment StoreEntitySet="AsientoContableSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NoAsiento" ColumnName="NoAsiento" />
+          <ScalarProperty Name="DescripcionAsiento" ColumnName="DescripcionAsiento" />
+          <ScalarProperty Name="FechaAsiento" ColumnName="FechaAsiento" />
+          <ScalarProperty Name="TipoMovimiento" ColumnName="TipoMovimiento" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="CuentaContable" ColumnName="CuentaContable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

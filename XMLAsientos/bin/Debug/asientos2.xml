@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AsientoContable xmlns="https://www.miurl.me" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.miurl.me xsd3.xsd" 
+    Id="124">
+	
+    <NoAsiento>123</NoAsiento>
+    <DescripcionAsiento>lorem ipsum</DescripcionAsiento>
+    <FechaAsiento>06/11/2018</FechaAsiento>
+    <CuentaContable>1101</CuentaContable>
+    <TipoMovimiento>DB</TipoMovimiento>
+    <Monto>100000.00</Monto>
+</AsientoContable>

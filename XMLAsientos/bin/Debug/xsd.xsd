@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://www.miurl.me"
+	xmlns="https://www.miurl.me">
+
+<xs:element name="AsientosContables">
+  <xs:complexType>
+    <xs:sequence>
+
+      <xs:element name="AsientoContable" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>      
+            <xs:element name="NoAsiento">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:pattern value="[0-9][0-9][0-9]"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="DescripcionAsiento">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length value="300"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="FechaAsiento" type="xs:date"/>
+
+            <xs:element name="CuentaContable">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length value="300"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="TipoMovimiento">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="DB|CR"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="Monto">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                  <xs:totalDigits value="6"/>
+                  <xs:fractionDigits value="2"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+          
+          <xs:attribute name="Id" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:integer">
+                <xs:pattern value="[0-9][0-9][0-9]"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="AsientoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="AsientoModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AsientoContableSet" EntityType="AsientoModel.AsientoContable" />
+  </EntityContainer>
+  <EntityType Name="AsientoContable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoAsiento" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionAsiento" Type="String" Nullable="false" MaxLength="300" />
+    <Property Name="FechaAsiento" Type="DateTime" Nullable="false" />
+    <Property Name="TipoMovimiento" Type="AsientoModel.TipoMovimiento" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" />
+    <Property Name="CuentaContable" Type="String" Nullable="false" />
+  </EntityType>
+  <EnumType Name="TipoMovimiento" cg:ExternalTypeName="XMLAsientos.xsd4.TipoMovimiento" />
+</Schema>

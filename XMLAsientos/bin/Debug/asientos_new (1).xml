@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AsientosContables 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        xmlns="https://www.miurl.me">
+<AsientoContable Id="125">
+    <NoAsiento>555</NoAsiento>
+    <DescripcionAsiento>lolazo</DescripcionAsiento>
+    <FechaAsiento>2019-01-26</FechaAsiento>
+    <CuentaContable>1111</CuentaContable>
+    <TipoMovimiento>CR</TipoMovimiento>
+    <Monto>999999.65</Monto>
+</AsientoContable>
+<AsientoContable Id="125">
+    <NoAsiento>555</NoAsiento>
+    <DescripcionAsiento>lolazo</DescripcionAsiento>
+    <FechaAsiento xmlns="">2019-01-26</FechaAsiento>
+    <CuentaContable>1111</CuentaContable>
+    <TipoMovimiento>CR</TipoMovimiento>
+    <Monto>999999.65</Monto>
+</AsientoContable>
+</AsientosContables>

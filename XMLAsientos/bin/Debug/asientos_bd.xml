@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<AsientosContables xmlns="https://www.miurl.me" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+	xs:schemaLocation="https://www.miurl.me xsd2.xsd" >
+	
+	<AsientoContable Id="129">
+		<NoAsiento>1</NoAsiento>
+		<DescripcionAsiento>lorem ipsum</DescripcionAsiento>
+		<FechaAsiento>06/11/2018</FechaAsiento>
+		<CuentaContable>1101</CuentaContable>
+		<TipoMovimiento>DB</TipoMovimiento>
+		<Monto>100000</Monto>
+	</AsientoContable>
+
+	<AsientoContable Id="242">
+		<NoAsiento>2</NoAsiento>
+		<DescripcionAsiento>dolor sit amet</DescripcionAsiento>
+		<FechaAsiento>01/01/2019</FechaAsiento>
+		<CuentaContable>1250</CuentaContable>
+		<TipoMovimiento>CR</TipoMovimiento>
+		<Monto>500000</Monto>
+	</AsientoContable>
+</AsientosContables>
